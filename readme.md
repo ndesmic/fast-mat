@@ -8,3 +8,5 @@ This is a bench-mark for observing the differences in various matrix-math implem
 - `deno task gen-rand-data` will generate random test data
 
 Other functions are for outputing bench data in different formats
+
+![Graph of results](matrix.png)
