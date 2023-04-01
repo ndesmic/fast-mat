@@ -1,0 +1,9 @@
+{
+	"tasks" : {
+		"to-md" : "deno run -A ./tools/json-bench-to-md.js",
+		"to-csv" : "deno run -A ./tools/json-bench-to-csv.js",
+		"bench-json" : "deno bench --json > ./temp/bench.json",
+		"gen-presized-funcs" : "deno run -A ./tools/gen-presized-funcs.js",
+		"gen-rand-data" : "deno run -A ./tools/gen-random-data.js"
+	}
+}
