@@ -1,9 +1,13 @@
 {
 	"tasks" : {
-		"to-md" : "deno run -A ./tools/json-bench-to-md.js",
-		"to-csv" : "deno run -A ./tools/json-bench-to-csv.js",
-		"bench-json" : "deno bench --json > ./temp/bench.json",
-		"gen-presized-funcs" : "deno run -A ./tools/gen-presized-funcs.js",
-		"gen-rand-data" : "deno run -A ./tools/gen-random-data.js"
+		"test" : "deno test -A",
+		"bench" : "deno bench -A",
+		"bench:json" : "deno bench -A --json > ./temp/bench.json",
+		"run:to-md" : "deno run -A ./tools/json-bench-to-md.js",
+		"run:to-csv" : "deno run -A ./tools/json-bench-to-csv.js",
+		"run:poi" : "deno run -A ./tools/json-bench-extract-poi.js",
+		"gen:presized-funcs" : "deno run -A ./tools/gen-presized-funcs.js",
+		"gen:rand-data" : "deno run -A ./tools/gen-random-data.js",
+		"build:wasm" : "wax wat2wasm -- wat/mat.wat -o wasm/mat.wasm"
 	}
 }

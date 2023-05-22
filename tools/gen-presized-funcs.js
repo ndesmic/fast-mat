@@ -9,7 +9,7 @@ export function genMatAddFlatFunctionString(rows, cols) {
 
 
 function writeFile(type, functionGenerator){
-	const sizes = [1, 2, 4, 8, 16, 32, 64, 100];
+	const sizes = [1, 2, 4, 8, 16, 32, 64, 128, 256];
 	let out = ""; //lol string buffer
 
 	for (const size of sizes) {
