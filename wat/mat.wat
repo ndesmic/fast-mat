@@ -90,5 +90,5 @@
 	(export "addMatrixSimdF64" (func $matrix_add_simd_f64))
 	(export "addMatrixSimdF32" (func $matrix_add_simd_f32))
 	(export "addMatrixSimdI32" (func $matrix_add_simd_i32))
-	(memory (export "memory") 24)
+	(memory (export "memory") 512) ;;page size 64kb
 )

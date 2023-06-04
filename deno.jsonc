@@ -1,13 +1,22 @@
 {
 	"tasks" : {
+		"serve" : "deno run --allow-net --allow-read https://deno.land/std@0.188.0/http/file_server.ts",
 		"test" : "deno test -A",
 		"bench" : "deno bench -A",
+		"bench:web" : "deno run -A --unstable ./tools/web-bench.js -- web-bench",
+		"bench:webxl" : "deno run -A --unstable ./tools/web-bench.js -- web-bench-xl",
 		"bench:json" : "deno bench -A --json > ./temp/bench.json",
 		"run:to-md" : "deno run -A ./tools/json-bench-to-md.js",
-		"run:to-csv" : "deno run -A ./tools/json-bench-to-csv.js",
-		"run:poi" : "deno run -A ./tools/json-bench-extract-poi.js",
+		"run:to-csv" : "deno run -A ./tools/json-bench-to-csv.js temp/bench.json",
+		"run:web:to-csv" : "deno run -A ./tools/json-bench-to-csv.js temp/web-bench.json --web",
+		"run:webxl:to-csv" : "deno run -A ./tools/json-bench-to-csv.js temp/web-bench-xl.json --web",
+		"run:poi" : "deno run -A ./tools/json-bench-extract-poi.js -- ./temp/bench.json",
+		"run:web:poi" : "deno run -A ./tools/json-bench-extract-poi.js -- ./temp/web-bench.json",
+		"run:webxl:poi" : "deno run -A ./tools/json-bench-extract-poi.js -- ./temp/web-bench-xl.json",
 		"gen:presized-funcs" : "deno run -A ./tools/gen-presized-funcs.js",
 		"gen:rand-data" : "deno run -A ./tools/gen-random-data.js",
-		"build:wasm" : "wax wat2wasm -- wat/mat.wat -o wasm/mat.wasm"
+		"gen:web-bench" : "deno run -A ./tools/gen-web-bench.js",
+		"gen:web-bench-xl" : "deno run -A ./tools/gen-web-bench-xl.js",
+		"build:wasm" : "mkdir -p temp/wasm && wax wat2wasm -- wat/mat.wat -o temp/wasm/mat.wasm"
 	}
 }

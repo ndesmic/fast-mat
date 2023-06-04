@@ -1,0 +1,199 @@
+Name, Min(ns), Max(ns), Avg(ns), p75(ns), p95(ns), p99(ns), p995(ns)
+Add 1x1 (Func),undefined,undefined,395,undefined,undefined,undefined
+Add 1x1 (Loop),undefined,undefined,1815,undefined,undefined,undefined
+Add 1x1 (Loop Prealloc),undefined,undefined,300,undefined,undefined,undefined
+Add 1x1 (Unrolled),undefined,undefined,575,undefined,undefined,undefined
+Add 1x1 (Unrolled Dynamic),undefined,undefined,750,undefined,undefined,undefined
+Add 1x1 (Flat),undefined,undefined,520,undefined,undefined,undefined
+Add 1x1 (Flat column Major),undefined,undefined,320,undefined,undefined,undefined
+Add 1x1 (Flat Simple),undefined,undefined,365,undefined,undefined,undefined
+Add 1x1 (Flat Func),undefined,undefined,325,undefined,undefined,undefined
+Add 1x1 (Flat Unrolled),undefined,undefined,485,undefined,undefined,undefined
+Add 1x1 (F64),undefined,undefined,1645,undefined,undefined,undefined
+Add 1x1 (F32),undefined,undefined,585,undefined,undefined,undefined
+Add 1x1 (I32),undefined,undefined,545,undefined,undefined,undefined
+Add 1x1 (F64 Flat),undefined,undefined,535,undefined,undefined,undefined
+Add 1x1 (F32 Flat),undefined,undefined,465,undefined,undefined,undefined
+Add 1x1 (I32 Flat),undefined,undefined,450,undefined,undefined,undefined
+Add 1x1 (WASM F64),undefined,undefined,1010,undefined,undefined,undefined
+Add 1x1 (WASM SIMD F64),undefined,undefined,770,undefined,undefined,undefined
+Add 1x1 (WASM SIMD F32),undefined,undefined,725,undefined,undefined,undefined
+Add 1x1 (WASM SIMD I32),undefined,undefined,795,undefined,undefined,undefined
+Add 1x1 (WebGL F32),undefined,undefined,513415,undefined,undefined,undefined
+Add 1x1 (WebGPU F32),undefined,undefined,3459870,undefined,undefined,undefined
+Add 2x2 (Func),undefined,undefined,715,undefined,undefined,undefined
+Add 2x2 (Loop),undefined,undefined,670,undefined,undefined,undefined
+Add 2x2 (Loop Prealloc),undefined,undefined,525,undefined,undefined,undefined
+Add 2x2 (Unrolled),undefined,undefined,510,undefined,undefined,undefined
+Add 2x2 (Unrolled Dynamic),undefined,undefined,620,undefined,undefined,undefined
+Add 2x2 (Flat),undefined,undefined,555,undefined,undefined,undefined
+Add 2x2 (Flat column Major),undefined,undefined,525,undefined,undefined,undefined
+Add 2x2 (Flat Simple),undefined,undefined,880,undefined,undefined,undefined
+Add 2x2 (Flat Func),undefined,undefined,580,undefined,undefined,undefined
+Add 2x2 (Flat Unrolled),undefined,undefined,805,undefined,undefined,undefined
+Add 2x2 (F64),undefined,undefined,1915,undefined,undefined,undefined
+Add 2x2 (F32),undefined,undefined,800,undefined,undefined,undefined
+Add 2x2 (I32),undefined,undefined,835,undefined,undefined,undefined
+Add 2x2 (F64 Flat),undefined,undefined,740,undefined,undefined,undefined
+Add 2x2 (F32 Flat),undefined,undefined,755,undefined,undefined,undefined
+Add 2x2 (I32 Flat),undefined,undefined,695,undefined,undefined,undefined
+Add 2x2 (WASM F64),undefined,undefined,790,undefined,undefined,undefined
+Add 2x2 (WASM SIMD F64),undefined,undefined,760,undefined,undefined,undefined
+Add 2x2 (WASM SIMD F32),undefined,undefined,860,undefined,undefined,undefined
+Add 2x2 (WASM SIMD I32),undefined,undefined,810,undefined,undefined,undefined
+Add 2x2 (WebGL F32),undefined,undefined,499990,undefined,undefined,undefined
+Add 2x2 (WebGPU F32),undefined,undefined,3463190,undefined,undefined,undefined
+Add 4x4 (Func),undefined,undefined,1515,undefined,undefined,undefined
+Add 4x4 (Loop),undefined,undefined,685,undefined,undefined,undefined
+Add 4x4 (Loop Prealloc),undefined,undefined,770,undefined,undefined,undefined
+Add 4x4 (Unrolled),undefined,undefined,750,undefined,undefined,undefined
+Add 4x4 (Unrolled Dynamic),undefined,undefined,800,undefined,undefined,undefined
+Add 4x4 (Flat),undefined,undefined,710,undefined,undefined,undefined
+Add 4x4 (Flat column Major),undefined,undefined,525,undefined,undefined,undefined
+Add 4x4 (Flat Simple),undefined,undefined,480,undefined,undefined,undefined
+Add 4x4 (Flat Func),undefined,undefined,770,undefined,undefined,undefined
+Add 4x4 (Flat Unrolled),undefined,undefined,1075,undefined,undefined,undefined
+Add 4x4 (F64),undefined,undefined,975,undefined,undefined,undefined
+Add 4x4 (F32),undefined,undefined,530,undefined,undefined,undefined
+Add 4x4 (I32),undefined,undefined,465,undefined,undefined,undefined
+Add 4x4 (F64 Flat),undefined,undefined,740,undefined,undefined,undefined
+Add 4x4 (F32 Flat),undefined,undefined,590,undefined,undefined,undefined
+Add 4x4 (I32 Flat),undefined,undefined,450,undefined,undefined,undefined
+Add 4x4 (WASM F64),undefined,undefined,955,undefined,undefined,undefined
+Add 4x4 (WASM SIMD F64),undefined,undefined,1135,undefined,undefined,undefined
+Add 4x4 (WASM SIMD F32),undefined,undefined,660,undefined,undefined,undefined
+Add 4x4 (WASM SIMD I32),undefined,undefined,730,undefined,undefined,undefined
+Add 4x4 (WebGL F32),undefined,undefined,521510,undefined,undefined,undefined
+Add 4x4 (WebGPU F32),undefined,undefined,3392190,undefined,undefined,undefined
+Add 8x8 (Func),undefined,undefined,1245,undefined,undefined,undefined
+Add 8x8 (Loop),undefined,undefined,560,undefined,undefined,undefined
+Add 8x8 (Loop Prealloc),undefined,undefined,1500,undefined,undefined,undefined
+Add 8x8 (Unrolled),undefined,undefined,2290,undefined,undefined,undefined
+Add 8x8 (Unrolled Dynamic),undefined,undefined,2205,undefined,undefined,undefined
+Add 8x8 (Flat),undefined,undefined,305,undefined,undefined,undefined
+Add 8x8 (Flat column Major),undefined,undefined,305,undefined,undefined,undefined
+Add 8x8 (Flat Simple),undefined,undefined,315,undefined,undefined,undefined
+Add 8x8 (Flat Func),undefined,undefined,570,undefined,undefined,undefined
+Add 8x8 (Flat Unrolled),undefined,undefined,2300,undefined,undefined,undefined
+Add 8x8 (F64),undefined,undefined,1440,undefined,undefined,undefined
+Add 8x8 (F32),undefined,undefined,930,undefined,undefined,undefined
+Add 8x8 (I32),undefined,undefined,830,undefined,undefined,undefined
+Add 8x8 (F64 Flat),undefined,undefined,925,undefined,undefined,undefined
+Add 8x8 (F32 Flat),undefined,undefined,895,undefined,undefined,undefined
+Add 8x8 (I32 Flat),undefined,undefined,760,undefined,undefined,undefined
+Add 8x8 (WASM F64),undefined,undefined,1165,undefined,undefined,undefined
+Add 8x8 (WASM SIMD F64),undefined,undefined,1185,undefined,undefined,undefined
+Add 8x8 (WASM SIMD F32),undefined,undefined,955,undefined,undefined,undefined
+Add 8x8 (WASM SIMD I32),undefined,undefined,945,undefined,undefined,undefined
+Add 8x8 (WebGL F32),undefined,undefined,474240,undefined,undefined,undefined
+Add 8x8 (WebGPU F32),undefined,undefined,3380625,undefined,undefined,undefined
+Add 16x16 (Func),undefined,undefined,2030,undefined,undefined,undefined
+Add 16x16 (Loop),undefined,undefined,3120,undefined,undefined,undefined
+Add 16x16 (Loop Prealloc),undefined,undefined,1170,undefined,undefined,undefined
+Add 16x16 (Unrolled),undefined,undefined,8385,undefined,undefined,undefined
+Add 16x16 (Unrolled Dynamic),undefined,undefined,8385,undefined,undefined,undefined
+Add 16x16 (Flat),undefined,undefined,605,undefined,undefined,undefined
+Add 16x16 (Flat column Major),undefined,undefined,625,undefined,undefined,undefined
+Add 16x16 (Flat Simple),undefined,undefined,520,undefined,undefined,undefined
+Add 16x16 (Flat Func),undefined,undefined,1175,undefined,undefined,undefined
+Add 16x16 (Flat Unrolled),undefined,undefined,8685,undefined,undefined,undefined
+Add 16x16 (F64),undefined,undefined,3485,undefined,undefined,undefined
+Add 16x16 (F32),undefined,undefined,3600,undefined,undefined,undefined
+Add 16x16 (I32),undefined,undefined,2625,undefined,undefined,undefined
+Add 16x16 (F64 Flat),undefined,undefined,2105,undefined,undefined,undefined
+Add 16x16 (F32 Flat),undefined,undefined,1710,undefined,undefined,undefined
+Add 16x16 (I32 Flat),undefined,undefined,1510,undefined,undefined,undefined
+Add 16x16 (WASM F64),undefined,undefined,3590,undefined,undefined,undefined
+Add 16x16 (WASM SIMD F64),undefined,undefined,3635,undefined,undefined,undefined
+Add 16x16 (WASM SIMD F32),undefined,undefined,1525,undefined,undefined,undefined
+Add 16x16 (WASM SIMD I32),undefined,undefined,1490,undefined,undefined,undefined
+Add 16x16 (WebGL F32),undefined,undefined,488900,undefined,undefined,undefined
+Add 16x16 (WebGPU F32),undefined,undefined,3458640,undefined,undefined,undefined
+Add 32x32 (Func),undefined,undefined,5100,undefined,undefined,undefined
+Add 32x32 (Loop),undefined,undefined,9850,undefined,undefined,undefined
+Add 32x32 (Loop Prealloc),undefined,undefined,3435,undefined,undefined,undefined
+Add 32x32 (Unrolled),undefined,undefined,53680,undefined,undefined,undefined
+Add 32x32 (Unrolled Dynamic),undefined,undefined,60415,undefined,undefined,undefined
+Add 32x32 (Flat),undefined,undefined,2265,undefined,undefined,undefined
+Add 32x32 (Flat column Major),undefined,undefined,2595,undefined,undefined,undefined
+Add 32x32 (Flat Simple),undefined,undefined,1380,undefined,undefined,undefined
+Add 32x32 (Flat Func),undefined,undefined,3895,undefined,undefined,undefined
+Add 32x32 (Flat Unrolled),undefined,undefined,52300,undefined,undefined,undefined
+Add 32x32 (F64),undefined,undefined,6305,undefined,undefined,undefined
+Add 32x32 (F32),undefined,undefined,5055,undefined,undefined,undefined
+Add 32x32 (I32),undefined,undefined,4285,undefined,undefined,undefined
+Add 32x32 (F64 Flat),undefined,undefined,5615,undefined,undefined,undefined
+Add 32x32 (F32 Flat),undefined,undefined,4850,undefined,undefined,undefined
+Add 32x32 (I32 Flat),undefined,undefined,4170,undefined,undefined,undefined
+Add 32x32 (WASM F64),undefined,undefined,6085,undefined,undefined,undefined
+Add 32x32 (WASM SIMD F64),undefined,undefined,5900,undefined,undefined,undefined
+Add 32x32 (WASM SIMD F32),undefined,undefined,4980,undefined,undefined,undefined
+Add 32x32 (WASM SIMD I32),undefined,undefined,5860,undefined,undefined,undefined
+Add 32x32 (WebGL F32),undefined,undefined,589780,undefined,undefined,undefined
+Add 32x32 (WebGPU F32),undefined,undefined,3439995,undefined,undefined,undefined
+Add 64x64 (Func),undefined,undefined,21085,undefined,undefined,undefined
+Add 64x64 (Loop),undefined,undefined,42670,undefined,undefined,undefined
+Add 64x64 (Loop Prealloc),undefined,undefined,11170,undefined,undefined,undefined
+Add 64x64 (Unrolled),undefined,undefined,234625,undefined,undefined,undefined
+Add 64x64 (Unrolled Dynamic),undefined,undefined,236005,undefined,undefined,undefined
+Add 64x64 (Flat),undefined,undefined,8285,undefined,undefined,undefined
+Add 64x64 (Flat column Major),undefined,undefined,10405,undefined,undefined,undefined
+Add 64x64 (Flat Simple),undefined,undefined,5090,undefined,undefined,undefined
+Add 64x64 (Flat Func),undefined,undefined,13650,undefined,undefined,undefined
+Add 64x64 (Flat Unrolled),undefined,undefined,206495,undefined,undefined,undefined
+Add 64x64 (F64),undefined,undefined,22625,undefined,undefined,undefined
+Add 64x64 (F32),undefined,undefined,16445,undefined,undefined,undefined
+Add 64x64 (I32),undefined,undefined,13800,undefined,undefined,undefined
+Add 64x64 (F64 Flat),undefined,undefined,21515,undefined,undefined,undefined
+Add 64x64 (F32 Flat),undefined,undefined,16440,undefined,undefined,undefined
+Add 64x64 (I32 Flat),undefined,undefined,13875,undefined,undefined,undefined
+Add 64x64 (WASM F64),undefined,undefined,22590,undefined,undefined,undefined
+Add 64x64 (WASM SIMD F64),undefined,undefined,21780,undefined,undefined,undefined
+Add 64x64 (WASM SIMD F32),undefined,undefined,12835,undefined,undefined,undefined
+Add 64x64 (WASM SIMD I32),undefined,undefined,14215,undefined,undefined,undefined
+Add 64x64 (WebGL F32),undefined,undefined,791710,undefined,undefined,undefined
+Add 64x64 (WebGPU F32),undefined,undefined,3363880,undefined,undefined,undefined
+Add 128x128 (Func),undefined,undefined,60690,undefined,undefined,undefined
+Add 128x128 (Loop),undefined,undefined,164000,undefined,undefined,undefined
+Add 128x128 (Loop Prealloc),undefined,undefined,44455,undefined,undefined,undefined
+Add 128x128 (Unrolled),undefined,undefined,898000,undefined,undefined,undefined
+Add 128x128 (Unrolled Dynamic),undefined,undefined,921195,undefined,undefined,undefined
+Add 128x128 (Flat),undefined,undefined,93765,undefined,undefined,undefined
+Add 128x128 (Flat column Major),undefined,undefined,143820,undefined,undefined,undefined
+Add 128x128 (Flat Simple),undefined,undefined,80020,undefined,undefined,undefined
+Add 128x128 (Flat Func),undefined,undefined,124315,undefined,undefined,undefined
+Add 128x128 (Flat Unrolled),undefined,undefined,857550,undefined,undefined,undefined
+Add 128x128 (F64),undefined,undefined,74145,undefined,undefined,undefined
+Add 128x128 (F32),undefined,undefined,56940,undefined,undefined,undefined
+Add 128x128 (I32),undefined,undefined,45870,undefined,undefined,undefined
+Add 128x128 (F64 Flat),undefined,undefined,66960,undefined,undefined,undefined
+Add 128x128 (F32 Flat),undefined,undefined,56980,undefined,undefined,undefined
+Add 128x128 (I32 Flat),undefined,undefined,45870,undefined,undefined,undefined
+Add 128x128 (WASM F64),undefined,undefined,80620,undefined,undefined,undefined
+Add 128x128 (WASM SIMD F64),undefined,undefined,74330,undefined,undefined,undefined
+Add 128x128 (WASM SIMD F32),undefined,undefined,42385,undefined,undefined,undefined
+Add 128x128 (WASM SIMD I32),undefined,undefined,50210,undefined,undefined,undefined
+Add 128x128 (WebGL F32),undefined,undefined,1169290,undefined,undefined,undefined
+Add 128x128 (WebGPU F32),undefined,undefined,3397200,undefined,undefined,undefined
+Add 256x256 (Func),undefined,undefined,213755,undefined,undefined,undefined
+Add 256x256 (Loop),undefined,undefined,796045,undefined,undefined,undefined
+Add 256x256 (Loop Prealloc),undefined,undefined,170095,undefined,undefined,undefined
+Add 256x256 (Unrolled),undefined,undefined,3799700,undefined,undefined,undefined
+Add 256x256 (Unrolled Dynamic),undefined,undefined,3821800,undefined,undefined,undefined
+Add 256x256 (Flat),undefined,undefined,305320,undefined,undefined,undefined
+Add 256x256 (Flat column Major),undefined,undefined,654935,undefined,undefined,undefined
+Add 256x256 (Flat Simple),undefined,undefined,300925,undefined,undefined,undefined
+Add 256x256 (Flat Func),undefined,undefined,539105,undefined,undefined,undefined
+Add 256x256 (Flat Unrolled),undefined,undefined,3611890,undefined,undefined,undefined
+Add 256x256 (F64),undefined,undefined,262165,undefined,undefined,undefined
+Add 256x256 (F32),undefined,undefined,190795,undefined,undefined,undefined
+Add 256x256 (I32),undefined,undefined,164700,undefined,undefined,undefined
+Add 256x256 (F64 Flat),undefined,undefined,273725,undefined,undefined,undefined
+Add 256x256 (F32 Flat),undefined,undefined,185295,undefined,undefined,undefined
+Add 256x256 (I32 Flat),undefined,undefined,164070,undefined,undefined,undefined
+Add 256x256 (WASM F64),undefined,undefined,324325,undefined,undefined,undefined
+Add 256x256 (WASM SIMD F64),undefined,undefined,273135,undefined,undefined,undefined
+Add 256x256 (WASM SIMD F32),undefined,undefined,151800,undefined,undefined,undefined
+Add 256x256 (WASM SIMD I32),undefined,undefined,164460,undefined,undefined,undefined
+Add 256x256 (WebGL F32),undefined,undefined,1831745,undefined,undefined,undefined
+Add 256x256 (WebGPU F32),undefined,undefined,3259780,undefined,undefined,undefined

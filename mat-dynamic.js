@@ -1,5 +1,5 @@
 export function genMatAddBody(rows, cols) {
-	let funcBody = "return [\n";
+	let funcBody = "\nreturn [\n";
 
 	for (let r = 0; r < rows; r++) {
 		funcBody += "\t\t["

@@ -1,53 +1,5 @@
-import { addMatrixFunc, addMatrixFlat } from "../mat.js";
-
-export function getNormal(mean = 0, standardDeviation = 1) {
-	const u1 = Math.random();
-	const u2 = Math.random();
-	return Math.sqrt(-2 * Math.log(u1)) * Math.cos(2 * Math.PI * u2) * standardDeviation + mean;
-}
-
-function normalSampler(mean, standardDeviation, rounding = x => x){
-	return () => rounding(getNormal(mean, standardDeviation));
-}
-function normalIntSampler(mean, standardDeviation){
-	return () => Math.floor(getNormal(mean, standardDeviation));
-}
-function uniformSampler(start = 0, end = 1){
-	return () => start + Math.random() * (end - start);
-}
-
-function getMat(rMax, cMax, sampler){
-	const mat = [];
-	for (let row = 0; row < rMax; row++) {
-		const r = [];
-		for (let col = 0; col < cMax; col++) {
-			r.push(sampler());
-		}
-		mat.push(r);
-	}
-	return mat;
-}
-
-function getMatFlat(rMax, cMax, sampler) {
-	const mat = [];
-	for (let row = 0; row < rMax; row++) {
-		for (let col = 0; col < cMax; col++) {
-			mat.push(sampler());
-		}
-	}
-	return mat;
-}
-
-export function addMatrixFlatSimple(a, b, constructor) {
-	const out = new constructor(a.length);
-	for(let i = 0; i < a.length; i++){
-		out[i] = a[i] + b[i];
-		if(constructor.name === "Float32Array"){
-			out[i] = Math.fround(out[i]);
-		}
-	}
-	return out;
-}
+import { addMatrixFunc, addMatrixFlatSimple } from "../mat.js";
+import { getMat, getMatFlat, normalIntSampler, normalSampler } from "../utils/random-util.js";
 
 function toTitleCase(str){
 	const [first, ...rest] = str;
@@ -77,10 +29,11 @@ function writeTestFile(type, sampler, constructor, isFlat = false){
 		out += `export const mat${size}Result${toTitleCase(type)} = ${serializeArray(r, constructor)}\n\n`;
 	}
 
-	Deno.writeTextFileSync(`./data/mat-data-${type.toLowerCase()}.js`, out);
+	Deno.writeTextFileSync(`./temp/data/mat-data-${type.toLowerCase()}.js`, out);
 }
 
+Deno.mkdirSync("./temp/data", { recursive: true });
 writeTestFile("num", normalSampler(0, 1e9), Array, false);
 writeTestFile("i32", normalIntSampler(0, Number.MIN_SAFE_INTEGER / 6), Int32Array, true);
 writeTestFile("f64", normalSampler(0, 1e9), Float64Array, true);
-writeTestFile("f32", normalSampler(0, 1e9, x => Math.fround(x)), Float32Array, true);
+writeTestFile("f32", normalSampler(0, 1e4, x => Math.fround(x)), Float32Array, true);

@@ -14,7 +14,7 @@ export function addMatrixLoop(a, b) {
 	return out;
 }
 
-export function addMatrixLoopPreAlloc(a, b) {
+export function addMatrixLoopPrealloc(a, b) {
 	const out = new Array(a.length);
 	for (let row = 0; row < a.length; row++) {
 		const arrayRow = new Array(a[0].length);
@@ -166,7 +166,12 @@ export function addMatrixInt32Flat(a, b) {
 	return out;
 }
 
-const wasm = await Deno.readFile("./wasm/mat.wasm");
+let wasm;
+if(globalThis.Deno){
+	wasm = await Deno.readFile("./temp/wasm/mat.wasm");
+} else {
+	wasm = await fetch("../temp/wasm/mat.wasm").then(r => r.arrayBuffer());
+}
 const { instance: matInstance } = await WebAssembly.instantiate(wasm, {
 	// lib: {
 	// 	print_int: function(num){

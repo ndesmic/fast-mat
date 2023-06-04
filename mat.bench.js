@@ -8,7 +8,7 @@ import {
 	addMatrixInt32, 
 	addMatrixFunc, 
 	addMatrixLoop, 
-	addMatrixLoopPreAlloc, 
+	addMatrixLoopPrealloc, 
 	addMatrixFlatSimpleFunc,
 	addMatrixWasmF64,
 	addMatrixWasmSimdF64,
@@ -28,7 +28,7 @@ import {
 	addMatrix64x64Nested,
 	addMatrix128x128Nested,
 	addMatrix256x256Nested 
-} from "./presized/mat-presized-nested.js";
+} from "./temp/presized/mat-presized-nested.js";
 
 import {
 	addMatrix1x1Flat,
@@ -40,7 +40,7 @@ import {
 	addMatrix64x64Flat,
 	addMatrix128x128Flat,
 	addMatrix256x256Flat
-} from "./presized/mat-presized-flat.js";
+} from "./temp/presized/mat-presized-flat.js";
 
 import { genMatAddFunc  } from "./mat-dynamic.js";
 
@@ -54,7 +54,7 @@ import {
 	mat64ANum, mat64BNum,
 	mat128ANum, mat128BNum,
 	mat256ANum, mat256BNum
-} from "./data/mat-data-num.js";
+} from "./temp/data/mat-data-num.js";
 
 import { 
 	mat1AF64, mat1BF64,
@@ -66,7 +66,7 @@ import {
 	mat64AF64, mat64BF64,
 	mat128AF64, mat128BF64,
 	mat256AF64, mat256BF64,
-} from "./data/mat-data-f64.js";
+} from "./temp/data/mat-data-f64.js";
 
 import {
 	mat1AF32, mat1BF32,
@@ -78,7 +78,7 @@ import {
 	mat64AF32, mat64BF32,
 	mat128AF32, mat128BF32,
 	mat256AF32, mat256BF32
-} from "./data/mat-data-f32.js"
+} from "./temp/data/mat-data-f32.js"
 
 import {
 	mat1AI32, mat1BI32,
@@ -90,7 +90,7 @@ import {
 	mat64AI32, mat64BI32,
 	mat128AI32, mat128BI32,
 	mat256AI32, mat256BI32
-} from "./data/mat-data-i32.js"
+} from "./temp/data/mat-data-i32.js"
 
 const addMatrix1x1Dyn = genMatAddFunc(1,1);
 const addMatrix2x2Dyn = genMatAddFunc(2,2);
@@ -201,39 +201,39 @@ Deno.bench("Add 256x256 (Loop)", { group: "256x256" }, () => {
 //Loop Prealloc
 
 Deno.bench("Add 1x1 (Loop Prealloc)", { group: "1x1" }, () => {
-	addMatrixLoopPreAlloc(mat1ANum, mat1BNum);
+	addMatrixLoopPrealloc(mat1ANum, mat1BNum);
 });
 
 Deno.bench("Add 2x2 (Loop Prealloc)", { group: "2x2" }, () => {
-	addMatrixLoopPreAlloc(mat2ANum, mat2BNum);
+	addMatrixLoopPrealloc(mat2ANum, mat2BNum);
 });
 
 Deno.bench("Add 4x4 (Loop Prealloc)", { group: "4x4" }, () => {
-	addMatrixLoopPreAlloc(mat4ANum, mat4BNum);
+	addMatrixLoopPrealloc(mat4ANum, mat4BNum);
 });
 
 Deno.bench("Add 8x8 (Loop Prealloc)", { group: "8x8" }, () => {
-	addMatrixLoopPreAlloc(mat8ANum, mat8BNum);
+	addMatrixLoopPrealloc(mat8ANum, mat8BNum);
 });
 
 Deno.bench("Add 16x16 (Loop Prealloc)", { group: "16x16" }, () => {
-	addMatrixLoopPreAlloc(mat16ANum, mat16BNum);
+	addMatrixLoopPrealloc(mat16ANum, mat16BNum);
 });
 
 Deno.bench("Add 32x32 (Loop Prealloc)", { group: "32x32" }, () => {
-	addMatrixLoopPreAlloc(mat32ANum, mat32BNum);
+	addMatrixLoopPrealloc(mat32ANum, mat32BNum);
 });
 
 Deno.bench("Add 64x64 (Loop Prealloc)", { group: "64x64" }, () => {
-	addMatrixLoopPreAlloc(mat64ANum, mat64BNum);
+	addMatrixLoopPrealloc(mat64ANum, mat64BNum);
 });
 
 Deno.bench("Add 128x128 (Loop Prealloc)", { group: "128x128" }, () => {
-	addMatrixLoopPreAlloc(mat128ANum, mat128BNum);
+	addMatrixLoopPrealloc(mat128ANum, mat128BNum);
 });
 
 Deno.bench("Add 256x256 (Loop Prealloc)", { group: "256x256" }, () => {
-	addMatrixLoopPreAlloc(mat256ANum, mat256BNum);
+	addMatrixLoopPrealloc(mat256ANum, mat256BNum);
 });
 
 //Unrolled
